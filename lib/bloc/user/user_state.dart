@@ -10,15 +10,18 @@ abstract class UserState {
 
    const UserState({
     this.existUser=false,
-     this.user
-     });
+     this.user});
+
 }
 
-
 //estado inicial
-
 class UserInitialState extends UserState {
-  
   const UserInitialState(): super(existUser: false, user: null);
+}
 
+class UserSetState extends UserState {
+  final Usuario newUsuario;
+
+  const UserSetState(this.newUsuario)
+  :super(existUser: true, user: newUsuario);
 }

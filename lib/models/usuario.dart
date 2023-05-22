@@ -4,7 +4,7 @@ class Usuario{
    int ?edad;
    List<String> ?profesions;
 
-   Usuario({this.nombre, this.edad, this.profesions});
+   Usuario({required this.nombre,required this.edad,required this.profesions});
 
    
 

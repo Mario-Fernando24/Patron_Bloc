@@ -4,10 +4,10 @@ part of 'user_bloc.dart';
 @immutable
 abstract class UserEvent {}
 
-class ActivateUser extends UserEvent {
+class ActivateUserEvent extends UserEvent {
    //cuando mando el evento ActivateUser siempre debo enviar un objeto de usuario
   final Usuario newUser;
   //constructor posicional 
-  ActivateUser(this.newUser);
+  ActivateUserEvent(this.newUser);
 
 }
