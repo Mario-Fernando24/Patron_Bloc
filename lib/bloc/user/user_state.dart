@@ -13,3 +13,12 @@ abstract class UserState {
      this.user
      });
 }
+
+
+//estado inicial
+
+class UserInitialState extends UserState {
+  
+  const UserInitialState(): super(existUser: false, user: null);
+
+}
