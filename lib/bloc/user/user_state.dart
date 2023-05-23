@@ -25,3 +25,4 @@ class UserSetState extends UserState {
   const UserSetState(this.newUsuario)
   :super(existUser: true, user: newUsuario);
 }
+
