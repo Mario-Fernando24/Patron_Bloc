@@ -30,7 +30,6 @@ class Pagina2Page extends StatelessWidget {
                   edad: 29,
                   profesions: [
                     'Develope',
-                    'Base de datos',
                     'Quimica'
                   ]
                 );
@@ -45,13 +44,23 @@ class Pagina2Page extends StatelessWidget {
               onPressed: (){
 
                 userBloc.add( ChangeUserAge(90));
-                
+
               }
             ),
               MaterialButton(
               color: Colors.blue[100],
               child: Text('Añadir profesión'),
-              onPressed: (){}
+              onPressed: (){
+                userBloc.add(AddProfesionsUser('DESARROLLADORA'));
+              }
+            ),
+
+              MaterialButton(
+              color: Colors.blue[100],
+              child: Text('Eliminar usuario'),
+              onPressed: (){
+                userBloc.add(DeleteUser());
+              }
             )
           ],
         )

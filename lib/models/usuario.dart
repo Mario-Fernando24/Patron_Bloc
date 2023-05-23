@@ -12,7 +12,7 @@ class Usuario{
       return Usuario(
         nombre: nombre  ?? this.nombre,
         edad: edad  ?? this.edad,
-        profesions: profesions  ?? this.profesions
+        profesions: profesion  ?? profesions
     );
 
    }
